@@ -1,0 +1,305 @@
+body,html{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.main-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+#top-pattern{
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 0;
+}
+#bot-pattern{
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+    z-index: 0;
+}
+.top-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.tl-cont{
+
+}
+#title{
+    width: 445px;
+    height: 154px;
+    flex-shrink: 0;
+    color: #512051;
+    font-family: "League Spartan";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 85.714% */
+    letter-spacing: -2px;
+}
+#subtitle{
+    width: 445px;
+    color: #927B91;
+    font-family: "League Spartan";
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 131.579% */
+    letter-spacing: -0.633px;
+}
+.tr-cont{
+    margin-left: 10rem;
+    width: 445px;
+}
+.review-cont{
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    width: 445px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #F7F2F7;
+}
+.star-cont{
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: .5rem;
+}
+.review{
+    margin-left: 1rem;
+    color: #512051;
+    font-family: "League Spartan";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#top-rev{
+    margin-left: -48px;
+}
+#bot-rev{
+    margin-left: 48px;
+}
+.bot-cont{
+    margin: 2rem 0;
+    display: flex;
+    z-index: 1;
+}
+.comment{
+    margin: 0 .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 234px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #512051;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.pfp>img{
+    margin: 2rem 1rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+}
+.author{
+    margin: 0;
+    margin-bottom: .5rem;
+    color: #FFF;
+    font-family: "League Spartan";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.status{
+    margin: 0;
+    color: #EE69A4;
+    font-family: "League Spartan";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.caption{
+    align-self: center;
+    width: 286px;
+    color: #FFF;
+    font-family: "League Spartan";
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 129.412% */
+    letter-spacing: -0.304px;
+}
+#left-com{
+    margin-top: -16px;
+}
+#right-com{
+    margin-top: 16px;
+}
+@media screen and (max-width:720px) {
+    .main-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+    }
+    #top-pattern{
+        display: none;
+    }
+    #bot-pattern{
+        display: none;
+    }
+    .top-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .tl-cont{
+    
+    }
+    #title{
+        width: 327px;
+        height: 102px;
+        flex-shrink: 0;
+        color: #512051;
+        text-align: center;
+        font-family: "League Spartan";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 80% */
+        letter-spacing: -1.429px;
+    }
+    #subtitle{
+        width: 327px;
+        color: #927B91;
+        text-align: center;
+        font-family: "League Spartan";
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px; /* 131.579% */
+        letter-spacing: -0.633px;
+    }
+    .tr-cont{
+        margin: 0;
+        width: 327px;
+    }
+    .review-cont{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 327px;
+        height: 78px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #F7F2F7;
+    }
+    .star-cont{
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        gap: .5rem;
+    }
+    .review{
+        margin: 0;
+        color: #512051;
+        font-family: "League Spartan";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    #top-rev{
+        margin: 0;
+    }
+    #bot-rev{
+        margin: 0;
+    }
+    .bot-cont{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .comment{
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        width: 327px;
+        height: 248px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        background: #512051;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+    }
+    .pfp>img{
+        margin: 2rem 1rem;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+    }
+    .author{
+        margin: 0;
+        margin-bottom: .5rem;
+        color: #FFF;
+        font-family: "League Spartan";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    .status{
+        margin: 0;
+        color: #EE69A4;
+        font-family: "League Spartan";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .caption{
+        margin: 0;
+        align-self: center;
+        width: 263px;
+        color: #FFF;
+        font-family: "League Spartan";
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px; /* 129.412% */
+        letter-spacing: -0.304px;
+    }
+    #left-com{
+        margin: auto;
+    }
+    #right-com{
+        margin: auto;
+    }
+    
+}
